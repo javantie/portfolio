@@ -2,17 +2,25 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+         
 }
-
+:root {
+    --primaty-color:  rgb(236, 232, 232);
+    --secondary-color:rgb(233, 220, 33);
+}
+/*code for nav bar*/
 nav {
-    background-color: #ffffff;
+    background-color: #000000d5;
     display: flex;
     justify-content: space-between;
     padding: 0 5%;
     align-items: center;
-    height: 60px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    height: 70px;
+    box-shadow: 0 0 20px rgba(2, 2, 12, 0.6);
+    border-radius: 0.5px;
     position: sticky;
+    top: 0;
+    z-index: 99999;
 }
 nav ul li {
 display: inline;
@@ -21,15 +29,25 @@ padding: 15px 20px;
 
 }
 
-.nav ul li a {
+nav ul li a {
     margin: 30px;
-    color: #505050;
-    font-size: 15px;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: 700;
+    font-family:cursive;
+    font-size: 17px;
+    font-weight: 900;
+    color: #f3ebeb;
+    text-shadow: 0 0 20px rgb(233, 220, 33);
+    
+    }
+
+nav h1 {
+    color: #f3ebeb;
+    font-size: 35px;
+    font-family:cursive;
+    font-weight: 600;
+    text-shadow: 0 0 15px rgba(233, 220, 33, 0.932);
 }
 
-.nav ul {
+nav ul {
     list-style: none;
     display: flex;
 }
@@ -37,57 +55,99 @@ a {
     text-decoration: none;
 }
 
-.title-txt {
-    color:#ffffff;
-    font-weight: bold;
-    font-size: 36px;
-    margin: 0;
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    align-items: center;
-    padding: 10px;
-}
-
-.sub-title-txt {
-    color: #1ff11f;
+.hero-txt {
+    color:#faf608;
     font-weight: bold;
     font-size: 25px;
     margin: 0;
-    text-shadow: 0 0 10px rgba(219, 114, 114, 0.842);
-    align-items: center;
-    padding: 25px;
+    text-shadow: 2 2 10px rgba(0, 0, 0, 0.3);
+    align-items:flex-end;
+    padding: 10px;
+    font-family:cursive;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 
-
+/* code for hero */
 .hero {
     display: flex;
-    flex-wrap: wrap;
-    justify-content:baseline;
-    padding: 10px 0 10px 0;
+    padding: 20px 20px 20px 30px;
     background-attachment: fixed;
+    background-image: url(https://images.pexels.com/photos/373543/pexels-photo-373543.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
     justify-content: space-between;
     width: 100%;
-    height: 300px;
+    height: 325px;
+    background-color: rgb(236, 232, 232);
 }
 
 .hero img {
     border-radius: 50%;
+    width: 285px;
+    height: 285px;
 }
 
-
+/* About Section*/
 .intro {
-    background-color: turquoise;
-    border: solid red 3px;
+    background-color: rgb(236, 232, 232);
     display: flex;
-    justify-content: space-between;
+    justify-content:first baseline;
     flex: 1 70;
-  
+    width: 100%;
+    height: auto;
+    padding: 25px;
+    
+}
+.about-me-title {
+    display: flex;
+    font-size: 25px;
+    font-family: cursive;
+    font-weight: 700;
+    padding: 20px 0 0 45px;
+    width: 40%;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 0 0 8px rgb(168, 21, 10);
+    color:#faf608;
+   
+}
+
+.primary title {
+    display: flex;
+    font-size: 25px;
+    font-family: cursive;
+    font-weight: 700;
+    padding: 20px 0 0 45px;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 0 0 8px rgb(168, 21, 10);
+    color:#faf608;
+   
 }
 
 .intro-txt {
-    padding: 5px 10px;
-
+    padding: 25px 25px 25px 25px;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 5px 25px 0;
+    font-size: 20px;
+    box-shadow: 0 0 25px rgba(2, 2, 12, 0.8);
+    border-radius: 15px;
+    background-color: rgb(201, 236, 177);
+    text-align: center;
+    line-height: 1.7;
+    height: 250px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
 }
+
+.my-work {
+    width: 100%;
+    height: 350px;
+    background-color: var(--primaty-color);
+}
+
 
 .flex-row {
     display: flex;
@@ -95,27 +155,6 @@ a {
 }
 
 
-
-
-
-
-
-
-.my-work {
-    display: flex;
-    flex-wrap:wrap;
-    justify-content: space-around;
-    flex: 1;
-    background-color: rgb(142, 172, 172);
-    border: solid red 3px;
-    
-}
-
-.my-work img {
-    width: 100px;
-    height: 100px;
-    border: solid red 3px;
-}
 
 footer ul li {
     display: inline-block;
