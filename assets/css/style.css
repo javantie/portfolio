@@ -99,13 +99,13 @@ a {
     justify-content:space-around;
     flex: 1 70;
     width: 100%;
-    height: 330px;
-    padding: 25px;
+    padding: 25px 25px 5px 25px;
     
 }
 
 .about-me-title {
     display: flex;
+    flex-wrap: wrap;
     justify-content:center;
     align-items:flex-start;
     font-size: 25px;
@@ -123,23 +123,26 @@ a {
 
 .intro-txt {
     padding: 25px 25px 25px 25px;
-    width: 70%;
+    width: 89%;
     display: flex;
     flex-wrap: wrap;
     padding: 10px 5px 25px 0;
     font-size: 20px;
-    box-shadow: 0 0 25px rgba(20, 20, 233, 0.6);
+    box-shadow: 0 0 25px rgba(20, 20, 233, 0.459);
     border-radius: 5px;
-    background-color: rgba(50, 199, 75, 0.486);
+    background-color: rgba(130, 212, 144, 0.26);
     text-align: left;
     line-height: 1.7;
     height: 260px;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    margin: 0px 10px 0px 35px;
+    margin: 0px 10px 15px 35px;
+    flex: 1;
     }
-    .intro-txt p {
-        padding: 5px 5px 0 15px;
-    }
+
+
+.intro-txt p {
+     padding: 5px 5px 0 15px;
+}
 
     /* Code for My work Section*/
 .my-work {
@@ -167,7 +170,7 @@ a {
     background-size: cover;
     border-right:solid rgba(10, 10, 10, 0.438) 5px;
     text-align: right;
-    padding: 15px 10px 0 0;
+    padding: 0px 10px 0 0;
     margin: 10px 0 0 5px;
 }
 
