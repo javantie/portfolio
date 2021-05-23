@@ -17,7 +17,6 @@ nav {
     align-items: center;
     height: 70px;
     box-shadow: 0 0 25px rgba(2, 2, 12, 0.952);
-    border-radius: 15px;
     position: sticky;
     top: 0;
     z-index: 99999;
@@ -94,10 +93,10 @@ a {
     height: 285px;
 }
 
-/* Code for sectional Layout Section*/
-.section-layout {
+/* Code For About Me Section*/
+.about-me-layout {
     display: flex;
-    justify-content:first baseline;
+    justify-content:space-around;
     flex: 1 70;
     width: 100%;
     height: 330px;
@@ -105,39 +104,44 @@ a {
     
 }
 
-/* code for section titles*/
-.section-title {
+.about-me-title {
     display: flex;
-    font-size: 20px;
+    justify-content:center;
+    align-items:flex-start;
+    font-size: 25px;
     font-family: cursive;
     font-weight: 700;
-    width: 30%;
-    align-items: center;
-    text-shadow: 0 0 8px rgba(27, 245, 63, 0.932);
+    width: 220px;
+    height: 220px;
+    text-shadow: 0 0 8px rgba(143, 241, 159, 0.932);
     color:var(--secondary-color);
     background-size: cover;
-    margin: 30px;
     border-right:solid rgba(10, 10, 10, 0.438) 5px;
-    background-color: grey;
+    text-align: right;
+    padding: 0 10px 0 0;
 }
 
 .intro-txt {
     padding: 25px 25px 25px 25px;
-    width: 90%;
+    width: 70%;
     display: flex;
     flex-wrap: wrap;
     padding: 10px 5px 25px 0;
     font-size: 20px;
     box-shadow: 0 0 25px rgba(20, 20, 233, 0.6);
-    border-radius: 15px;
-    background-color: rgba(125, 218, 125, 0.856);
-    text-align: center;
+    border-radius: 5px;
+    background-color: rgba(50, 199, 75, 0.486);
+    text-align: left;
     line-height: 1.7;
     height: 260px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     margin: 0px 10px 0px 35px;
     }
+    .intro-txt p {
+        padding: 5px 5px 0 15px;
+    }
 
+    /* Code for My work Section*/
 .my-work {
     display: flex;
     justify-content:first baseline;
@@ -149,7 +153,24 @@ a {
         
     }
 
-/* mu work section*/
+.my-work-title {
+    display: flex;
+    justify-content:center;
+    align-items:flex-start;
+    font-size: 25px;
+    font-family: cursive;
+    font-weight: 700;
+    width: 220px;
+    height: 625px;
+    text-shadow: 0 0 8px rgba(27, 245, 63, 0.932);
+    color:var(--secondary-color);
+    background-size: cover;
+    border-right:solid rgba(10, 10, 10, 0.438) 5px;
+    text-align: right;
+    padding: 15px 10px 0 0;
+    margin: 10px 0 0 5px;
+}
+
 .projects {
     display: flex;
     justify-content: space-between;
@@ -184,8 +205,7 @@ padding: 5px;
     align-items: center;
 }
 
-
-
+/* Code for contact section*/
 .contact-me{
     display: flex;
     justify-content:space-around;
@@ -238,7 +258,7 @@ padding: 5px;
     color: rgb(14, 12, 12);
     padding: 15px;
 }
-
+/*Contact Form Code*/
 .contact-form h3 {
  color: rgb(248, 247, 247);
  font-size: 25px;
