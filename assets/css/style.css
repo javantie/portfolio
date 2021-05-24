@@ -318,7 +318,7 @@ margin: 5px 0 10px 20px;
 
 
 .contact-form input, .contact-form textarea {
-    border: 1px solid lime;
+    border: 1px solid rgb(229, 233, 229);
     display: block;
     padding: 5px 15px;
     font-size: 16px;
@@ -328,13 +328,13 @@ margin: 5px 0 10px 20px;
     margin-top: 5px;
     margin-left: 25px;
     border-radius: 15px;
-    background-color: rgba(234, 240, 239, 0.753);
+    background-color: rgba(248, 242, 242, 0.89);
     
 }
 
 .contact-form input:focus, .contact-form textarea:focus {
     outline: none;
-    background-color: rgba(135, 135, 175, 0.75);
+    background-color: rgba(200, 219, 219, 0.75);
 }
 
 .contact-form button{
@@ -346,12 +346,12 @@ margin: 5px 0 10px 20px;
     padding: 10px 0;
     font-size: 16px;
     border-radius: 15px;
-    box-shadow: 0 0 10px rgba(31, 204, 31, 0.678);
+    box-shadow: 0 0 10px rgba(15, 17, 15, 0.678);
     margin: 0 0 65px 25px;
 }
 
 .contact-form button:hover {
-    color: rgba(113, 113, 211, 0.87);
+    color: rgba(93, 93, 158, 0.87);
     background: var(--tertiary-color);
 }
   
