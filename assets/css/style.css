@@ -129,7 +129,7 @@ a {
     padding: 10px 5px 25px 0;
     font-size: 20px;
     box-shadow: 0 0 25px rgba(20, 20, 233, 0.459);
-    border-radius: 5px;
+    border-radius: 10px;
     background-color: rgba(130, 212, 144, 0.26);
     text-align: left;
     line-height: 1.7;
@@ -177,8 +177,8 @@ a {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    
 }
+
 /*
 .project-title {
     display: flex;
@@ -202,7 +202,6 @@ display: flex;
 justify-content: flex-end;
 align-items: center;
 width: 100%;
-
 }
 
 .main-project {
@@ -215,12 +214,11 @@ width: 100%;
     padding: 10px;
     border-radius: 10px;
     margin: 10px 0 10px 30px;
-    
 }
 
 .project-layout article {
     height: 225px;
-    width: 400px;
+    width: 390px;
     background-image:url(../images/placeholder3.png);
     background-size: cover;
     padding: 10px 10px 35px 10px;
@@ -233,49 +231,26 @@ width: 100%;
     margin: 10px 15px 10px 15px;
 }
 
-
 /* Code for contact section*/
 .contact-me{
     display: flex;
     justify-content:space-around;
-    flex-direction: row;
     flex: 1 70;
     width: 100%;
     height: auto;
-    padding: 25px;
-   
-}
+    padding: 25px 25px 5px 25px;
+} 
 
-.contact-me div {
-    border: none;
-}
-
-.contact-me h2 {
-    display: flex;
-    font-size: 48px;
-    font-family: cursive;
-    font-weight: 700;
-    width: 300px;
-    height: 70px;
-    text-shadow: 0 0 8px rgba(27, 245, 63, 0.932);
-    color:var(--secondary-color);
-    margin: 0 0 20px 8px;
-    background-color: grey;
-    justify-content: center;
-    border-radius: 15px;
-    box-shadow:0 0 8px rgba(31, 240, 66, 0.911);
-  }
 .contact-list {
-   display:inline;
-   width: 600px;
-   margin: 0 0 15px 0;
-   color:rgba(255, 255, 255, 0.863) ;
-   background-color: grey;
-    text-align: center;
+   width: 100%;
+   margin: 20px 0 20px 0;
+   display: flex;
+   justify-content: flex-start;
 }
+
    .contact-list ul li {
     display: inline;
-    font-size: 15px;
+    font-size: 25px;
     font-family: cursive;
     margin: 0px;
     padding: 0 0 5px 30px;
@@ -284,9 +259,11 @@ width: 100%;
 
 .contact-list ul li a {
     text-decoration: none;
-    color: rgb(14, 12, 12);
+    color:var(--secondary-color);
     padding: 15px;
 }
+
+
 /*Contact Form Code*/
 .contact-form h3 {
  color: rgb(248, 247, 247);
@@ -295,13 +272,38 @@ width: 100%;
 margin: 5px 0 10px 20px;
 }
 
+.contact-flex {
+    display: flex;
+    width: 100%;
+}
+
+.contact-me-title {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items:flex-start;
+    font-size: 25px;
+    font-family: cursive;
+    font-weight: 700;
+    width: 220px;
+    height: 300px;
+    text-shadow: 0 0 8px rgba(143, 241, 159, 0.932);
+    color:var(--secondary-color);
+    background-size: cover;
+    border-right:solid rgba(10, 10, 10, 0.438) 5px;
+    text-align: right;
+    padding: 0 10px 0 0;
+
+}
 
 .contact-form {
-    background-color: lightgray;
-    width: 570px;
+    background-color: rgba(85, 250, 79, 0.603);
+    width: 40%;
     display: flex;
     flex-direction: column;
-    border-radius: 10px;
+    border-radius: 40px;
+    margin: 0 0 15px 15px;
+    box-shadow: 0 0 35px rgba(235, 248, 50, 0.815);
 }
 
 
@@ -313,6 +315,8 @@ margin: 5px 0 10px 20px;
     margin-left: 25px;
     padding: 15px 0 15px 0;
 }
+
+
 .contact-form input, .contact-form textarea {
     border: 1px solid lime;
     display: block;
@@ -326,14 +330,14 @@ margin: 5px 0 10px 20px;
     border-radius: 15px;
     background-color: rgba(234, 240, 239, 0.753);
     
-  }
+}
 
-  .contact-form input:focus, .contact-form textarea:focus {
+.contact-form input:focus, .contact-form textarea:focus {
     outline: none;
     background-color: rgba(135, 135, 175, 0.75);
-  }
+}
 
- .contact-form button{
+.contact-form button{
     width: 20%;
     border: none;
     background:var(--secondary-color);
@@ -344,10 +348,10 @@ margin: 5px 0 10px 20px;
     border-radius: 15px;
     box-shadow: 0 0 10px rgba(31, 204, 31, 0.678);
     margin: 0 0 65px 25px;
-  }
+}
 
-  .contact-form button:hover {
+.contact-form button:hover {
     color: rgba(113, 113, 211, 0.87);
     background: var(--tertiary-color);
-  }
+}
   
