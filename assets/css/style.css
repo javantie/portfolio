@@ -3,12 +3,14 @@
     margin: 0;
     padding: 0;
     }
+
 .root{ 
     --title-color:rgb(114, 167, 192);
     --bg-color:rgba(40, 45, 99, 0.952);
     --secondary-color:rgb(114, 167, 192);
 }
 
+/*Hero Section*/
 .hero{
 display: flex;
 justify-content: flex-end;
@@ -38,9 +40,8 @@ flex-wrap: wrap;
     font-weight: 700;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     border-radius: 0px 10px 10px 0px ;
-
-
 }
+
 
 .hero-banner {
     width: 100%;
@@ -58,7 +59,6 @@ flex-wrap: wrap;
     border-radius: 50%;
     padding: 2px;
 }
-
 
 .txt {
 display: flex;
@@ -79,17 +79,12 @@ margin: 15px;
 color:rgba(40, 45, 99, 0.952);
 font-family: monospace;
 font-weight: 700;
-
 }
 
-
+/*Navigation Bar*/
 .hero nav {
     padding: 0 5%;
     height: 70px;
-    /*box-shadow: 0 0 25px rgba(2, 2, 12, 0.952);
-    position: sticky;
-    top: 0;
-    z-index: 99999;*/
     width: 60%;
     text-align: right;
     background-color:rgba(40, 45, 99, 0.952);
@@ -124,7 +119,7 @@ font-weight: 700;
     font-family: monospace;
     font-weight: 700;
 }
-
+/*About me section*/
 .about-me {
     display: flex;
     width: 100%;
@@ -132,7 +127,7 @@ font-weight: 700;
     margin: 20px 10px 10px 10px;
 }
 
-.primary-title {
+.primary-title { /*This is the primary title code*/
     width: 10%;
     margin:10px 10px 10px 40px;
     border-right: solid rgb(117, 93, 93) 3px;
@@ -158,13 +153,14 @@ font-weight: 700;
 }
 
 
-
+/*My Work Section*/
 .my-work {
     display: flex;
     width: 100%;
     justify-content: space-between;
     flex-wrap: wrap;
     margin: 10px;
+
 }
 
 .main-project {
@@ -227,6 +223,7 @@ font-weight: 700;
 
 }
 
+/*Contact me section*/
 .contact-me {
     display: flex;
     flex-wrap: wrap;
@@ -259,4 +256,138 @@ text-decoration: none;
 text-decoration-color: none;
 color:rgba(40, 45, 99, 0.952) ;
 
+}
+
+/*Media Queries*/
+
+@media screen and (max-width:1024px){
+    .hero-txt {
+        font-size: 15px;
+    }
+
+    .primary-title {
+        margin-right: 15px;
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    .main-project {
+        width: 76%;
+        margin-right: 10px;
+    }
+    .my-work{
+        justify-content: flex-start;
+    }
+
+    .projects{
+        margin-left: 163px;
+    }
+
+    .contact-me div {
+        padding-left: 15px;
+    }
+
+
+
+}
+
+@media screen and (max-width:768px){
+
+    .txt h2 {
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .about-txt {
+        width: 60%;
+    }
+
+    .main-project {
+        width: 70%;
+        margin-right: 10px;
+        height: 200px;
+    }
+
+    .projects{
+        margin-left: 137px;
+    }
+
+        .contact-me{
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .contact-me ul{
+            width: 77%;
+        }
+}
+    
+
+@media screen and (max-width:480px){
+    .hero-txt {
+        font-size: 8px;
+    }
+
+    .hero nav ul li {
+        display: inline-block;
+        padding: 1px;
+    }
+
+    .hero nav ul li a {
+        font-size: 10px;
+    }
+
+    .txt h2 {
+        font-size: 15px;
+    }
+
+    .hero-banner img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .primary-title {
+        width: 13%;
+        margin: 5px 10px 10px 15px;
+    }
+
+    .main-project{
+        width: 60%;
+        height: 150px;
+   }
+
+   .projects {
+       margin-left: 84px;
+   }
+
+   .main-project span {
+       font-size: 15px;
+   }
+
+   .flex-item{
+       width: 175px;
+       height: 80px;
+   }
+
+   .contact-me div {
+       font-size: 15px;
+       margin: 5px 10px 10px 5px;
+       padding-right: 25px;
+   }
+
+   .contact-me ul {
+       width: 70%;
+       display: inline;
+   }
+
+   .contact-me ul li a{
+    font-size: 15px;
+    padding: 1px;
+    font-weight: 700;
+   }
+
+   .about-me p {
+       line-height: 1.2;
+       padding: 5px;
+   }
 }
