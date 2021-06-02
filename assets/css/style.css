@@ -1,0 +1,423 @@
+* {
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    }
+
+.root{ 
+    --title-color:rgb(114, 167, 192);
+    --bg-color:rgba(40, 45, 99, 0.952);
+    --secondary-color:rgb(114, 167, 192);
+}
+
+/*Hero Section*/
+.hero{
+display: flex;
+justify-content: flex-end;
+width: 100%;
+padding: 0px 10px 0px 10px;
+flex-wrap: wrap;
+}
+
+.hero-txt {
+    width: 30%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    font-weight: 600;
+    background-color:rgba(40, 45, 99, 0.952);
+    position: sticky;
+    top: 0;
+}
+
+.hero h1 {
+    background-color: rgb(114, 167, 192);
+    color:rgba(40, 45, 99, 0.952);
+    width: 70%;
+    text-align: right;
+    padding-right: 5px;
+    font-weight: 700;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 0px 3px 3px 0px ;
+}
+
+
+.hero-banner {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-image: url(../images/hero-img.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    padding: 2px;
+}
+
+.txt {
+display: flex;
+align-items: flex-end;
+justify-content: flex-end;
+width: 70%;
+margin-right: 10px;
+background-image: url(../images/hero-img.jpg);
+background-attachment: fixed;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.txt h2 {
+background-color: rgb(114, 167, 192);
+padding: 15px;
+margin: 15px;
+color:rgba(40, 45, 99, 0.952);
+font-family: monospace;
+font-weight: 700;
+border-radius: 3px;
+}
+
+/*Navigation Bar*/
+.hero nav {
+    padding: 0 5%;
+    height: 70px;
+    width: 60%;
+    text-align: right;
+    background-color:rgba(40, 45, 99, 0.952);
+    position: sticky;
+    top: 0;
+}
+
+.hero nav ul{ 
+    list-style: none;
+    width: 100%;
+    margin-top: 25px;
+    background-color:rgba(40, 45, 99, 0);
+
+
+}
+
+.hero nav ul li {
+    display: inline;
+    text-decoration: underline;
+    padding: 10px;
+    background-color:rgba(40, 45, 99, 0);
+
+
+}
+.hero nav ul li a {
+    text-decoration: none;
+    background-color:rgba(40, 45, 99, 0);
+    color:rgb(114, 167, 192);
+    font-size: 20px;
+    padding: 5px;
+    font-weight: 700;
+    font-family: monospace;
+    font-weight: 700;
+}
+/*About me section*/
+.about-me {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    margin: 20px 10px 10px 10px;
+}
+
+.primary-title { /*This is the primary title code*/
+    width: 10%;
+    margin:10px 10px 10px 40px;
+    border-right: solid rgb(117, 93, 93) 3px;
+    text-align: right;
+    font-weight: 700;
+    font-size: 30px;
+    text-align: right;
+    color:rgba(40, 45, 99, 0.952) ;
+    padding: 5px;
+
+}
+
+.about-txt {
+    width: 80%;
+    margin: 10px;
+}
+
+.about-me p {
+    color:rgb(76, 104, 117);
+    padding: 10px;
+    font-size: 20px;
+    line-height: 1.3;
+}
+
+
+/*My Work Section*/
+.my-work {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 10px;
+
+}
+
+.main-project {
+    width: 80%;
+    height: 400px;
+    margin: 15px 15px;
+    background-image: url(../images/project-1.PNG);
+    display: flex;
+    align-items:flex-end;
+    border: solid 5px  rgb(114, 167, 192);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.main-project img {
+
+    width: 100%;
+    height: 400px;
+}
+
+.main-project span {
+    display: flex;
+    height: 60px;
+    width: 20%;
+    margin: 0px 0px 25px 0px;
+    background-color: rgb(114, 167, 192);
+    align-items: center;
+    font-size: 25px;
+    font-family: monospace;
+    font-weight: 700;
+    color: rgba(40, 45, 99, 0.952);
+    position: absolute;
+    
+}
+
+.projects {
+    display: flex;
+    width: 70%;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    flex: 1;
+    margin-left: 203px;
+    border-left: solid 3px rgb(117, 93, 93);
+}
+
+
+.flex-item {
+    display: flex;
+    width: 38%;
+    height: 150px;
+    border:  solid 5px rgb(114, 167, 192);
+    align-items: center;
+    margin: 20px;
+    background-image: url(../images/placeholder3.png);
+    background-size: cover;
+    color: rgba(40, 45, 99, 0.952)
+}
+
+
+.flex-item span {
+    display: flex;
+    height: 40px;
+    width: 30%;
+    background-color: rgb(114, 167, 192);
+    align-items: center;
+    font-size: 15px;
+    font-family: monospace;
+    font-weight: 700;
+
+}
+
+/*Contact me section*/
+.contact-me {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.contact-me div {
+    padding-right: 15px;
+}
+
+.contact-me ul {
+    list-style: none;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    width: 70%;
+}
+
+.contact-me ul li {
+    display: inline;
+    font-size: 25px;
+    font-weight: 700px;
+    text-decoration: underline;
+
+}
+
+.contact-me ul li a {
+text-decoration: none;
+text-decoration-color: none;
+color:rgba(40, 45, 99, 0.952) ;
+
+}
+
+/*Media Queries*/
+
+/* -------------Screen with Max-width of 1280px-------------*/
+@media screen and (max-width:1280px) {
+
+    .projects{
+        justify-content: space-around;
+        margin-left: 177px;
+    }
+
+
+    .contact-me div {
+        padding-right: 25px;
+        Margin: 10px 10px 10px 30px;
+    }
+
+    .contact-me ul {
+        width: 79%;
+    }
+    
+}
+
+/* -------------Screen with Max-width of 1024px-------------*/
+@media screen and (max-width:1024px){
+    .hero-txt {
+        font-size: 15px;
+    }
+
+    .primary-title {
+        margin-right: 15px;
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    .main-project {
+        width: 76%;
+        margin-right: 10px;
+    }
+    .my-work{
+        justify-content: flex-start;
+    }
+
+    .projects{
+        margin-left: 163px;
+    }
+
+    .contact-me div {
+        padding-left: 15px;
+    }
+}
+
+/* -------------Screen with Max-width of 768px-------------*/
+@media screen and (max-width:768px){
+
+    .txt h2 {
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .about-txt {
+        width: 60%;
+    }
+
+    .main-project {
+        width: 70%;
+        margin-right: 10px;
+        height: 200px;
+    }
+
+    .projects{
+        margin-left: 137px;
+    }
+
+    .contact-me{
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .contact-me ul{
+        width: 77%;
+    }
+}
+    
+/* -------------Screen with Max-width of 480px-------------*/
+@media screen and (max-width:480px){
+    .hero-txt {
+        font-size: 8px;
+    }
+
+    .hero nav ul li {
+        display: inline-block;
+        padding: 1px;
+    }
+
+    .hero nav ul li a {
+        font-size: 10px;
+    }
+
+    .txt h2 {
+        font-size: 15px;
+    }
+
+    .hero-banner img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .primary-title {
+        width: 13%;
+        margin: 5px 10px 10px 15px;
+    }
+
+    .main-project{
+        width: 60%;
+        height: 150px;
+   }
+
+   .projects {
+       margin-left: 84px;
+   }
+
+   .main-project span {
+       font-size: 15px;
+   }
+
+   .flex-item{
+       width: 175px;
+       height: 80px;
+   }
+
+   .contact-me div {
+       font-size: 15px;
+       margin: 5px 10px 10px 5px;
+       padding-right: 25px;
+   }
+
+   .contact-me ul {
+       width: 70%;
+       display: inline;
+   }
+
+   .contact-me ul li a{
+    font-size: 15px;
+    padding: 1px;
+    font-weight: 700;
+   }
+
+   .about-me p {
+       line-height: 1.2;
+       padding: 5px;
+   }
+}
