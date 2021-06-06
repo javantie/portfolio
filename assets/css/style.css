@@ -146,7 +146,7 @@ nav ul li :hover {
 }
 
 .main-project {
-    width: 72%;
+    width: 80%;
     height: 370px;
     margin: 15px 120px 15px 15px;
     display: flex;
@@ -324,7 +324,7 @@ padding: 25px;
 
 /*MEDIA QUERRIES*/
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+@media only screen and (min-width: 600px) {
     .txt {
         width: 55%;
     }
@@ -425,3 +425,10 @@ padding: 25px;
     
 }
 
+@media only screen and (min-width: 1200px){
+.main-project {
+    width: 70%;
+    height: 370px;
+}
+
+}
