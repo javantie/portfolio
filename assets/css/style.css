@@ -13,9 +13,9 @@ header {
     justify-content: space-between;
     flex-wrap: wrap;
     position: -webkit-sticky;
-    position: sticky;
+    /*position: sticky;
     top: 0;
-    z-index: 9999;
+    z-index: 9999;*/
     box-shadow: 5px 3px 8px rgb(25 55 58 /75%);
 }
  
@@ -44,7 +44,7 @@ nav ul {
 nav ul li a {
     padding: 10px 10px;
     font-weight: lighter;
-    font-size: 1.55vw;
+    font-size: 2vw;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
     font-family: monospace;
     text-decoration: none;
@@ -59,6 +59,7 @@ nav ul li :hover {
 
 .hero{
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
     background-image: url(../images/bg-1.jpg);
     background-repeat: no-repeat;
@@ -77,7 +78,7 @@ nav ul li :hover {
    display: flex;
    align-items: flex-end;
     justify-content: flex-end;
-    width: 100%;
+    width: 80%;
 }
         
 .txt h2 {
@@ -111,12 +112,16 @@ nav ul li :hover {
     color:rgba(40, 45, 99, 0.952) ;
     padding: 5px;
     text-shadow: 0 0 15px rgba(28, 97, 201, 0.7);
+    display: flex;
+    flex-wrap: wrap;
 
 }
 
 .about-txt {
     width: 80%;
     margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .about-me p {
@@ -141,9 +146,9 @@ nav ul li :hover {
 }
 
 .main-project {
-    width: 80%;
-    height: 400px;
-    margin: 15px 15px 15px 15px;
+    width: 72%;
+    height: 370px;
+    margin: 15px 120px 15px 15px;
     display: flex;
     align-items:flex-end;
     border: solid 5px  rgb(114, 167, 192);
@@ -151,15 +156,14 @@ nav ul li :hover {
 }
 
 .main-project:hover {
-    width: 83%;
-    height: 420px;
+    width: 75%;
+    height: 390px;
 }
 
 .main-project img {
     width: 100%;
     height: 100%;
     border-radius: 20px;
-    
 }
 
 .main-project span {
@@ -183,8 +187,6 @@ nav ul li :hover {
     flex-wrap: wrap;
     justify-content:space-between;
     flex: 1;
-    margin-left: 200px;
-    border-left: solid 3px rgb(117, 93, 93);
 }
 
 .flex-item {
@@ -202,7 +204,6 @@ nav ul li :hover {
 .flex-item:hover {
     width: 42%;
     height: 170px;
-
 }
 
 .flex-item a {
@@ -246,7 +247,7 @@ nav ul li :hover {
 }
 
 .contact-me div {
-    padding-right: 15px;
+    padding-right: 13px;
 }
 
 .contact-me ul {
@@ -255,9 +256,11 @@ nav ul li :hover {
     align-items: center;
     width: 40%;
 }
+
 .contact-me ul li {
 padding: 25px;
 }
+
 .contact-me ul li a {
     text-decoration: none;
     text-decoration-color: none;
@@ -266,7 +269,6 @@ padding: 25px;
     font-size: 25px;
     font-weight: 700px;
 }
-
 
 .contact-form {
     width: 40%;
@@ -287,6 +289,7 @@ padding: 25px;
     border-radius: 15px;
     background-color: rgba(255,255,255, 0.75);
 }
+
 .contact-form button{
     width: 25%;
     border: none;
@@ -297,26 +300,128 @@ padding: 25px;
     font-size: 18px;
     font-weight: 400;
     border-radius: 15px;
-  }
+}
 
-  .contact-form form {
-      color: rgb(114, 112, 112);
-      font-size: 15px;
-      font-family: sans-serif;
-      font-weight: 600;
-      padding: 5px;
-  }
+.contact-form form {
+    color: rgb(114, 112, 112);
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: 600;
+    padding: 5px;
+}
 
-  .contact-form h3{
+.contact-form h3{
     color: rgb(114, 112, 112);
     font-size: 25px;
     font-family: sans-serif;
     font-weight: 600;
     padding: 5px;
-  }
+}
 
   .contact-form button:hover {
     background: orange;
-  }
+}
 
+/*MEDIA QUERRIES*/
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .txt {
+        width: 55%;
+    }
+    .about-txt {
+        width: 68%;
+    }
+    .primary-title {
+        padding-right: 5px;
+        font-size: 18px;
+    }
+    header {
+        height: 35px;
+    }
+    .main-project {
+        width: 58%;
+        height: 225px;
+        margin-right: 70px;    
+    }
+    .main-project span a, .flex-item span a {
+        font-size: 15px;
+    }
+    .main-project span, .flex-item span {
+        width: 18%;
+        height: 40px;
+        border-radius: 2px;
+    }
+    .flex-item {
+        height: 135px;
+    }
+    .projects {
+        justify-content: unset;
+    }
+    .contact-form {
+        width: 100%;
+        border-radius: unset;
+    }
+    .contact-me ul {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .contact-me ul li a {
+        font-size: 20px;
+        padding: 5px;
+
+    }
+    .contact-me div {
+        border-right: unset;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        font-size: 25px;
+    }
+    .contact-form form {
+        padding: 0px;
+        width: 70%;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .txt {
+        width: 65%;
+    }
+    .about-txt {
+        width: 73%;
+    }
+
+    .primary-title {
+        padding-right: 12px;
+        font-size: 25px;
+    }
+    .main-project {
+        width: 60%;
+        height: 300px;
+        margin: 15px 80px 15px 15px;
+    }
+    .contact-me div {
+        padding-right: 18px;
+    }
+    .contact-form {
+        width: 35%;
+    }
+
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .main-project {
+        width: 68%;
+        flex-shrink: inherit;
+        margin: 15px 85px 15px 15px;
+    }
+    .txt {
+        width: 70%;
+    }
+    
+}
 
