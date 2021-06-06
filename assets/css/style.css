@@ -37,15 +37,8 @@ nav ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-<<<<<<< HEAD
-    background-image: url(../images/placeholder3.png);
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-=======
     align-items: center;
     list-style: none;
->>>>>>> master
 }
  
 nav ul li a {
@@ -150,22 +143,6 @@ nav ul li :hover {
 .main-project {
     width: 80%;
     height: 400px;
-<<<<<<< HEAD
-    margin: 15px 15px;
-    background-image: url(../images/project-1.PNG);
-    display: flex;
-    align-items:flex-end;
-    border: solid 5px  rgb(114, 167, 192);
-    background-repeat: no-repeat;
-    background-size: cover;
-
-}
-
-.main-project img {
-
-    width: 100%;
-    height: 400px;
-=======
     margin: 15px 15px 15px 15px;
     display: flex;
     align-items:flex-end;
@@ -183,7 +160,6 @@ nav ul li :hover {
     height: 100%;
     border-radius: 20px;
     
->>>>>>> master
 }
 
 .main-project span {
@@ -198,11 +174,7 @@ nav ul li :hover {
     font-weight: 700;
     color: rgba(40, 45, 99, 0.952);
     position: absolute;
-<<<<<<< HEAD
-    
-=======
     border-radius: 0px 15px 15px 0px;
->>>>>>> master
 }
 
 .projects {
