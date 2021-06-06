@@ -323,7 +323,12 @@ padding: 25px;
 }
 
 /*MEDIA QUERRIES*/
-/* Extra small devices (phones, 600px and down) */
+@media only screen and (min-width: 480px) {
+
+}
+
+
+/* Extra small devices (phones, 600px and up) */
 @media only screen and (min-width: 600px) {
     .txt {
         width: 55%;
@@ -353,9 +358,6 @@ padding: 25px;
     }
     .flex-item {
         height: 135px;
-    }
-    .projects {
-        justify-content: unset;
     }
     .contact-form {
         width: 100%;
@@ -400,7 +402,7 @@ padding: 25px;
     .main-project {
         width: 60%;
         height: 300px;
-        margin: 15px 80px 15px 15px;
+        margin: 15px 100px 15px 15px;
     }
     .contact-me div {
         padding-right: 18px;
@@ -415,9 +417,9 @@ padding: 25px;
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
     .main-project {
-        width: 68%;
+        width: 65%;
         flex-shrink: inherit;
-        margin: 15px 85px 15px 15px;
+        margin: 15px 80px 15px 15px;
     }
     .txt {
         width: 70%;
@@ -425,10 +427,16 @@ padding: 25px;
     
 }
 
+/* Large devices (laptops/desktops, 1200px and up) */
 @media only screen and (min-width: 1200px){
-.main-project {
-    width: 70%;
-    height: 370px;
-}
+    .main-project {
+        width: 70%;
+        height: 370px;
+    }
+
+    .main-project {
+        margin: 15px 115px 15px 15px ;
+    }
+
 
 }
