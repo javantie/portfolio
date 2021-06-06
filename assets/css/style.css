@@ -4,7 +4,6 @@
 }
 body {
     background-image: url(../images/bg-1.jpg);
-
 }
 
 header {
@@ -55,7 +54,6 @@ nav ul li :hover {
     background-color: orangered;
     border-radius: 60px;
 }
-
 
 .hero{
     display: flex;
@@ -217,7 +215,6 @@ nav ul li :hover {
     border-radius: 15px;
 }
 
-
 .flex-item span {
     display: flex;
     height: 60px;
@@ -318,12 +315,12 @@ padding: 25px;
     padding: 5px;
 }
 
-  .contact-form button:hover {
+.contact-form button:hover {
     background: orange;
 }
 
 /*-------------------------------MEDIA QUERRIES------------------------------*/
-
+/* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 480px) {
     header {
         justify-content: center;

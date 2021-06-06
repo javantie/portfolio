@@ -1,0 +1,178 @@
+body {
+    background-image: url(../images/bg-1.jpg);
+}
+header{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: lightblue;
+
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px 0px 3px 0px;
+    width: 100%;
+    height: 75px;
+    border-bottom: solid rgba(212, 221, 223, 0.767) 3px;
+    box-shadow: 2px 2px 15px rgba(27, 119, 223, 0.623);
+}
+ 
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    list-style: none;
+    padding: unset;
+    width: 100%;
+    justify-content: space-evenly;
+}
+nav ul li {
+    display: flex;
+}
+ 
+nav ul li a {
+    padding: 10px 10px;
+    font-weight: lighter;
+    font-size: 2vw;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+    font-family: monospace;
+    text-decoration: none;
+}
+
+nav ul li :hover {
+    color: white;
+    background-color: orangered;
+    border-radius: 60px;
+}
+/*old code*/
+.education {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    padding: 1%;
+    width: 60%;
+}
+h2 {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    padding: 11px;
+}
+main {
+    padding-left: 15px;
+
+}
+.jobs {
+    margin: 20px 0px;
+}
+.title {
+    font-size:1.1vw;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 250;
+}
+.title p {
+    font-size: 1.5vw;
+    font-weight: 550;
+}
+.txt {
+    display: flex;
+    flex-wrap: wrap;
+}
+.txt ul li{
+    padding: 2px;
+    font-size: 1.3vw;
+}
+.skills{ 
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.skill-title {
+    font-size: 1.8vw;
+    font-weight: 550;
+    text-align: center;
+    padding-right: 40px;
+}
+/*contact me*/
+.contact-me {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.contact-me div {
+    padding-right: 13px;
+}
+
+.contact-me ul {
+    list-style: none;
+    display: block;
+    align-items: center;
+    width: 20%;
+}
+
+.contact-me ul li {
+padding: 25px;
+}
+
+.contact-me ul li a {
+    text-decoration: none;
+    text-decoration-color: none;
+    color:rgba(40, 45, 99, 0.952);
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 700px;
+}
+
+.contact-form {
+    width: 65%;
+    margin:3px 0px 3px 0px;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 2px 0px 15px rgba(238, 241, 241, 0.705);
+}
+
+.contact-form input, .contact-form textarea {
+    border: 1px solid rgb(29, 73, 167);
+    display: block;
+    padding: 7px 15px;
+    font-size: 16px;
+    width: 65%;
+    margin-bottom: 15px;
+    margin-top: 5px;
+    border-radius: 15px;
+    background-color: rgba(255,255,255, 0.75);
+}
+
+.contact-form button{
+    width: 25%;
+    border: none;
+    background: rgb(39, 57, 211);
+    color: rgb(239, 247, 246);
+    text-align: center;
+    padding: 8px 0;
+    font-size: 18px;
+    font-weight: 400;
+    border-radius: 15px;
+}
+
+.contact-form form {
+    color: rgb(114, 112, 112);
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: 600;
+    padding: 5px;
+}
+
+.contact-form h3{
+    color: rgb(114, 112, 112);
+    font-size: 25px;
+    font-family: sans-serif;
+    font-weight: 600;
+    padding: 5px;
+}
+
+.contact-form button:hover {
+    background: orange;
+}
