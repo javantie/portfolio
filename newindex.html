@@ -4,72 +4,80 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/styles-2.css" />
     <link
       href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./assets/css/styles-2.css" />
     <title>Document</title>
   </head>
   <body class="">
-    <header class="flex items-center justify-center flex-col bg-red-900">
-      <div class="mt-4">
-        <img class="rounded-full" src="./assets/images/my-pic" alt="" />
-      </div>
-      <div class="mt-2 text-white font-extrabold">
-        <span class="text-center">
-          <p>AKEEM CLARKE</p>
-          <p>FULL-STACK SOFTWARE ENGINER</p>
+    <header class="h-22 pt-4">
+      <span class="font-bold sm:text-3xl text-lg text-white">
+        <h2 class="w-4/6 animate-bounce">
+          “First, solve the problem. Then, write the code.” – John Johnson
+        </h2>
+      </span>
+    </header>
+    <div class="flex items-center justify-center sticky top-0 border-t-2 border-b-2 bg-gray-700">
+      <nav class="text-white text-xl font-semibold p-1 no-underline">
+        <a class="no-underline px-4" href="#">My Resume</a> |
+        <a class="no-underline px-4" href="#">Portfolio</a> |
+        <a class="no-underline px-4" href="#">Contact Me</a> |
+        <a class="no-underline px-4" href="#">Personal Blog</a>
+      </nav>
+    </div>
+    <div id="hero" class="h-48 flex items-center justify-center">
+      <button class="bg-blue-400 p-2 rounded-lg text-white font-extrabold hover:bg-blue-800">View Projects</button>
+    </div>
+    <!-- About me section of the page -->
+    <section id="about-me" class="mx-2">
+      <div class="px-6 py-2 my-4 mx-4 rounded-md border-2 shadow-xl hover:shadow-inner w-3/6">
+        <span class="font-extrabold text-xl">About Me</span>
+        <div class="h-56 w-56 py-4">
+          <img class="rounded-2xl" src="./assets/images/my-pic" alt="">
+        </div>
+        <span>
+          <p class="w-auto leading-7 mt-2">
+            My Name is Akeem Clarke and I from West Palm Beach, Florida th
+            sunshine state that everyone loves. I have a BA in Accounting and a
+            AS in Business Managment. In additon, I am also an IRS Enrolled
+            Agent. My goal is to complete this couse and gain the knowledge to
+            start a new career. Lorem ipsum dolor sit amet, consectetur
+            adipisicing elit. Tempora nihil amet, nisi excepturi, blanditiis
+            neque error eligendi hic ea, autem in dolores. Odio ex beatae ea
+            quod, earum fugiat obcaecati. Lorem ipsum dolor sit amet,
+            consectetur adipisicing elit. Optio, error? Autem, hic, velit non
+            quo iure iusto magnam officiis, et suscipit tempora at! Voluptatem
+            corporis debitis odio temporibus vero quam!
+          </p>
         </span>
       </div>
-      <hr />
-      <div class="mb-2">
-        <nav class="text-white font-thin">
-          <a href="#">My Resume</a> | <a href="#">Portfolio</a> |
-          <a href="#">Contact Me</a> |
-          <a href="#">Personal Blog</a>
-        </nav>
-      </div>
-      <section id="favcon" class="flex p-2 justify-start">
-        <img
-          class="w-10 h-10 mr-2 rounded-lg"
-          src="./assets/images/placeholder4"
-          alt=""
-        />
-        <img
-          class="w-10 h-10 mr-2 rounded-lg"
-          src="./assets/images/placeholder4"
-          alt=""
-        />
-        <img
-          class="w-10 h-10 mr-2 rounded-lg"
-          src="./assets/images/placeholder4"
-          alt=""
-        />
-        <img
-          class="w-10 h-10 mr-2 rounded-lg"
-          src="./assets/images/placeholder4"
-          alt=""
-        />
-      </section>
-    </header>
-    <section>
-        <h2 class="p-2 text-center font-semibold" >ABOUT ME</h2>
-        <div id="abt-me-txt" class="p-2 text-center">
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi tenetur illum provident omnis possimus iure deserunt officia consectetur illo, totam veritatis cumque et rem doloribus.</p>
-        </div>
     </section>
-    <section class="bg-gray-100 sm:float-right sm:w-8/12">
-      <div class="text-center mt-2 text-xl">
-        <h1>PORTFOLIO</h1>
-      </div>
+    <!-- project title  -->
+    <div class="text-center text-xl">
+      <h1>PROJECTS</h1>
       <p class="p-2 font-semibold">
         See my works below. Unless explicitly stated otherwise, all their
         back-end and front-end parts were completely done by me.
       </p>
+    </div>
+    <!-- Main project area -->
+    <section id="my-work" class="bg-gray-100 flex flex-row justify-evenly">
       <div
         id="card"
-        class="mx-4 px-4 rounded-2xl border-red-800 shadow-2xl border-1 mb-4"
+        class="
+          mx-4
+          px-4
+          sm:w-6/12 sm:h-5/6
+          w-auto
+          rounded-3xl
+          border-gray-300
+          shadow-xl
+          hover:shadow-2xl
+          border-2
+          mb-4
+        "
       >
         <h2 class="mb-2 font-bold text-center pt-2">COIN NERDS</h2>
         <div id="card-img">
@@ -100,9 +108,21 @@
       </div>
       <div
         id="card"
-        class="mx-4 px-4 rounded-2xl border-red-800 shadow-2xl border-1 mb-4 mt-4"
+        class="
+          mx-4
+          px-4
+          sm:w-6/12 sm:h-5/6
+          w-auto
+          rounded-3xl
+          border-gray-300
+          shadow-xl
+          hover:shadow-2xl
+          border-2
+          mb-4
+          animate-pulse
+        "
       >
-        <h2 class="mb-2 font-bold text-center pt-2">NOTE TAKER</h2>
+        <h2 class="mb-2 font-bold text-center pt-2">COIN NERDS</h2>
         <div id="card-img">
           <img class="rounded-lg" src="./assets/images/placeholder6" alt="" />
         </div>
@@ -129,9 +149,28 @@
           <p class="mr-2 bg-red-900 text-white p-1 rounded">JAVA SCRIPT</p>
         </span>
       </div>
+    </section>
+    <div class="text-center font-extrabold font-xl py-4 border-t-2">
+      <h2>OTHER PROJECTS:</h2>
+    </div>
+    <!-- other project serction -->
+    <section id="other-projects" class="flex justify-evenly">
       <div
         id="card"
-        class="mx-4 px-4 rounded-2xl border-red-800 shadow-2xl border-1 mb-4"
+        class="
+          mx-4
+          px-4
+          mt-2
+          sm:w-4/12 sm:h-5/6
+          w-auto
+          rounded-3xl
+          border-gray-300
+          shadow-xl
+          hover:shadow-2xl
+          border-2
+          mb-4
+          animate-pulse
+        "
       >
         <h2 class="mb-2 font-bold text-center pt-2">COIN NERDS</h2>
         <div id="card-img">
@@ -162,7 +201,20 @@
       </div>
       <div
         id="card"
-        class="mx-4 px-4 rounded-2xl border-red-800 shadow-2xl border-1 mb-4"
+        class="
+          mx-4
+          px-4
+          mt-2
+          sm:w-4/12 sm:h-5/6
+          w-auto
+          rounded-3xl
+          border-gray-300
+          shadow-xl
+          hover:shadow-2xl
+          border-2
+          mb-4
+          animate-pulse
+        "
       >
         <h2 class="mb-2 font-bold text-center pt-2">COIN NERDS</h2>
         <div id="card-img">
@@ -193,7 +245,64 @@
       </div>
       <div
         id="card"
-        class="mx-4 px-4 rounded-2xl border-red-800 shadow-2xl border-1 mb-4"
+        class="
+          mx-4
+          px-4
+          mt-2
+          sm:w-4/12 sm:h-5/6
+          w-auto
+          rounded-3xl
+          border-gray-300
+          shadow-xl
+          hover:shadow-2xl
+          border-2
+          mb-4
+          animate-pulse
+        "
+      >
+        <h2 class="mb-2 font-bold text-center pt-2">COIN NERDS</h2>
+        <div id="card-img">
+          <img class="rounded-lg" src="./assets/images/placeholder6" alt="" />
+        </div>
+        <div id="text-area" class="mb-2">
+          <ul class="list-inside mt-2 list-disc p-3">
+            <li class="mb-2">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga aut
+              facere corporis
+            </li>
+            <li class="">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga aut
+              facere corporis
+            </li>
+          </ul>
+        </div>
+        <button class="bg-red-900 text-white p-1 mb-2 rounded">
+          More Details
+        </button>
+        <br />
+        <span class="font-semibold">TECHNOLOGIES:</span>
+        <span class="flex p-1 pb-4">
+          <p class="mr-2 bg-red-900 text-white p-1 rounded">TAILWINDCSS</p>
+          <p class="mr-2 bg-red-900 text-white p-1 rounded">HTML5</p>
+          <p class="mr-2 bg-red-900 text-white p-1 rounded">JAVA SCRIPT</p>
+        </span>
+      </div>
+      <div
+        id="card"
+        class="
+          mx-4
+          px-4
+          mt-2
+          sm:w-4/12 sm:h-5/6
+          w-auto
+          rounded-3xl
+          border-gray-300
+          shadow-xl
+          hover:shadow-2xl
+          border-2
+          mb-4
+          animate-pulse
+        "
       >
         <h2 class="mb-2 font-bold text-center pt-2">COIN NERDS</h2>
         <div id="card-img">
@@ -224,5 +333,6 @@
       </div>
     </section>
     <footer></footer>
+    <script src="./index.js"></script>
   </body>
 </html>
