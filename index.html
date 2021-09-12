@@ -1,123 +1,327 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <title>Akeem Clarke's Portfolio | Home</title>
-</head>
-<body>
-<header>
-    <h1 class="text-red-900">Akeem Clarke</h1>
-        <!--Navigation  Bar-->
-        <nav>
-          <ul>
-            <li>
-              <a href="#aboutMe">About Me</a>
+    <link rel="stylesheet" href="./assets/css/styles-2.css" />
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <title>Akeem Clarke</title>
+  </head>
+  <body class="">
+    <header class="h-22 pt-4">
+      <span class="font-bold sm:text-3xl text-lg text-white">
+        <h2 class="w-auto animate-bounce">
+          “First, solve the problem. Then, write the code.” – John Johnson
+        </h2>
+      </span>
+    </header>
+    <div
+      class="
+        flex
+        items-center
+        justify-center
+        sticky
+        top-0
+        border-t-2 border-b-2
+        bg-gray-700
+      "
+    >
+      <nav class="text-white text-xl font-semibold p-1 no-underline">
+        <a class="no-underline px-4" href="#sbout-me">My Resume</a> |
+        <a class="no-underline px-4" href="#my-work">Portfolio</a> |
+        <a class="no-underline px-4" href="./resume.html" target="blank">Resume</a> |
+        <a class="no-underline px-4" href="#contact">Contact Me</a>
+      </nav>
+    </div>
+    <div id="hero" class="h-44 flex items-center justify-center">
+      <button
+        class="
+          bg-blue-400
+          p-2
+          rounded-lg
+          text-white
+          font-extrabold
+          hover:bg-blue-800
+        "
+      >
+        View Projects
+      </button>
+    </div>
+    <!---------------------------------------------- About me section of the page ----------------------------------------->
+    <section id="about-me" class="mx-2">
+      <span class="font-extrabold text-xl">About Me</span>
+      <div
+        class="
+          px-6
+          py-2
+          my-4
+          mx-4
+          rounded-md
+          border-2
+          shadow-xl
+          hover:shadow-inner
+          items-center
+          w-auto
+          sm:flex sm:justify-between
+          w-auto
+        "
+      >
+        <div class="h-auto w-56 py-4 sm:ml-0">
+          <img
+            class="rounded-2xl w-56 h-56"
+            src="./assets/images/my-pic"
+            alt=""
+          />
+        </div>
+        <div class="sm:w-5/6 sm:pl-4">
+          <p class="leading-6 mt-2">
+            My Name is Akeem Clarke and I from West Palm Beach, Florida th
+            sunshine state that everyone loves. I have a BA in Accounting and a
+            AS in Business Managment. In additon, I am also an IRS Enrolled
+            Agent. My goal is to complete this couse and gain the knowledge to
+            start a new career. Lorem ipsum dolor sit amet, consectetur
+            adipisicing elit. Tempora nihil amet, nisi excepturi, blanditiis
+            neque error eligendi hic ea, autem in dolores. Odio ex beatae ea
+            quod, earum fugiat obcaecati. Lorem ipsum dolor sit amet,
+            consectetur adipisicing elit. Optio, error? Autem, hic, velit non
+            quo iure iusto magnam officiis, et suscipit tempora at! Voluptatem
+            corporis debitis odio temporibus vero quam!
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- --------------------------------------------project title  ------------------------------------------>
+    <div class="text-center text-xl">
+      <h1 class="font-bold">FEATURED PROJECTS</h1>
+      <p class="pt-2 pb-6 px-2 font-thin">
+        See my works below. Unless explicitly stated otherwise, all their
+        back-end and front-end parts were completely done by me.
+      </p>
+    </div>
+    <!-------------------------------------------------- Main project area ------------------------------------->
+    <section id="my-work" class="md:flex md:flex-row md:justify-evenly">
+      <div
+        id="card"
+        class="
+          mx-4
+          px-4
+          md:w-6/12 md:h-5/6
+          w-auto
+          rounded-3xl
+          border-gray-300
+          shadow-xl
+          hover:shadow-2xl
+          border-2
+          mb-4
+        "
+      >
+        <h2 class="mb-2 font-bold text-center pt-2">Stack_Underflo</h2>
+        <div id="card-img">
+          <img class="rounded-lg" src="./assets/images/Capture.PNG" alt="" />
+        </div>
+        <div id="text-area" class="mb-2">
+          <ul class="list-inside mt-2 list-disc p-3">
+            <li class="mb-2">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga aut
+              facere corporis
             </li>
-            <li>
-              <a href="#work">My Work</a>
-            </li>
-            <li>
-              <a href= "resume.html">Resume</a>
-            </li>
-            <li>
-              <a href="#contactMe">Contact Me</a>
+            <li class="">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga aut
+              facere corporis
             </li>
           </ul>
-        </nav>
-</header>
-    <!--Hero Section-->
-<section class="hero">
-            <img src="./assets/images/my-pic"  alt="Pictuer of Akeem Clarke">
-        <div class="txt">
-            <h2>“First, solve the problem. Then, write the code.” – John Johnson</h2>
         </div>
-
-</section>
-<!-- About Me Section-->
-<section id="aboutMe" class="about-me">
-    <div class="primary-title">
-        About Me
-    </div>
-    <div class="about-txt">
-        <p>My Name is Akeem Clarke and I from  West Palm Beach, Florida th sunshine state that everyone loves. 
-            I have a BA in Accounting and a AS in Business Managment. In additon,  I am also an IRS Enrolled Agent.
-            My goal is to complete this couse and gain the knowledge to start a new career.
-        </p>
-        <br>
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia necessitatibus quos provident officiis eius doloribus minima debitis ut similique? Sapiente animi iste,
-            veniam illum Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia necessitatibus quos provident officiis eius doloribus minima debitis ut similique? Sapiente animi iste,
-            veniam illum Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia necessitatibus quos provident officiis eius doloribus minima debitis ut similique? Sapiente animi iste,
-            veniam illum
-        </p>
-    </div>
-</section>
-     <!--------------------My Work Section---------------------->
- <section id="work" class="my-work">
-    <div class="primary-title">
-        My Work
-    </div>
-    <div class="main-project"> 
-        <a href="http://www.google.com">
-            <img src="./assets/images/placeholder6" alt="">
-        </a>
-        <span><a href="#">Heriseon Marketing</a></span> 
-    </div>
-    <div class="primary-title"></div> 
-    <div class="projects">
-        <div class="flex-item">
-            <a href="http://www.google.com">
-                <img src="./assets/images/placeholder3.png" alt="images of run-buddy project">
-            </a>
-            <span> <a href="#"> Run Buddy</a></span>
+        <button class="bg-red-900 text-white p-1 mb-2 rounded">
+          More Details
+        </button>
+        <br />
+        <span class="font-semibold">TECHNOLOGIES:</span>
+        <span class="flex p-1 pb-4">
+          <p class="mr-2 bg-red-900 text-white p-1 rounded">TAILWINDCSS</p>
+          <p class="mr-2 bg-red-900 text-white p-1 rounded">HTML5</p>
+          <p class="mr-2 bg-red-900 text-white p-1 rounded">JAVA SCRIPT</p>
+        </span>
+      </div>
+      <div
+        id="card"
+        class="
+          mx-4
+          px-4
+          md:w-6/12 md:h-5/6
+          w-auto
+          rounded-3xl
+          border-gray-300
+          shadow-xl
+          hover:shadow-2xl
+          border-2
+          mb-4
+        "
+      >
+        <h2 class="mb-2 font-bold text-center pt-2">Coin Nerds</h2>
+        <div id="card-img">
+          <img class="rounded-lg" src="./assets/images/Capture2.PNG" alt="" />
         </div>
-        <div class="flex-item">
-            <a href="http://www.google.com">
-                <img src="./assets/images/placeholder3.png" alt=" Image of Password Generator site">
-            </a>
-            <span> <a href="#"> Password Generator</a></span>
+        <div id="text-area" class="mb-2">
+          <ul class="list-inside mt-2 list-disc p-3">
+            <li class="mb-2">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga aut
+              facere corporis
+            </li>
+            <li class="">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga aut
+              facere corporis
+            </li>
+          </ul>
         </div>
-        <div class="flex-item">
-            <a href="http://www.google.com">
-                <img src="./assets/images/placeholder3.png" alt="Image of robot game ">
-            </a>
-            <span> <a href="#"> Robot Game</a></span>
-        </div>
-        <div class="flex-item">
-            <a href="http://www.google.com">
-                <img src="./assets/images/placeholder3.png" alt="place holder image">
-            </a>
-            <span> <a href="#"> Title</a></span>
-        </div>
+        <button class="bg-red-900 text-white p-1 mb-2 rounded">
+          More Details
+        </button>
+        <br />
+        <span class="font-semibold">TECHNOLOGIES:</span>
+        <span class="flex p-1 pb-4">
+          <p class="mr-2 bg-red-900 text-white p-1 rounded">TAILWINDCSS</p>
+          <p class="mr-2 bg-red-900 text-white p-1 rounded">HTML5</p>
+          <p class="mr-2 bg-red-900 text-white p-1 rounded">JAVA SCRIPT</p>
+        </span>
+      </div>
+    </section>
+    <div class="text-center font-extrabold font-xl py-4 border-t-2">
+      <h2>OTHER PROJECTS:</h2>
     </div>
-</section>
-<hr>
-<!--------------------Contact Section---------------------->
-<footer id="contactMe" class="contact-me">
-    <div class="primary-title">
-        Contact Me
-    </div>
-    <div class="contact-form">
-        <form>
-            <h3>Send Me A Message!💬</h3>
-            <label for="contact-name">Your Name:</label>
-            <input type="text" id="contact-name" placeholder="Your Name" />
-    
-            <label for="contact-message">Message:</label>
-            <textarea id="contact-message" placeholder="Message"></textarea>
-    
-            <button type="submit">Submit</button>
+    <!---------------------------------------------- other project serction ------------------------------------------------->
+    <section
+      id="other-projects"
+      class="flex flex-wrap justify-between md:justify-evenly"
+    >
+      <div
+        id="card"
+        class="
+          mx-4
+          px-4
+          mt-2
+          md:w-5/12
+          w-full
+          rounded-3xl
+          border-gray-300
+          shadow-xl
+          hover:shadow-2xl
+          border-2
+          mb-4
+          animate-pulse
+        "
+      >
+        <h2 class="mb-2 font-bold text-center pt-2">Note Taker App</h2>
+        <div id="card-img">
+          <img class="rounded-lg" src="./assets/images//heriseon.PNG" alt="" />
+        </div>
+        <div id="text-area" class="mb-2">
+          <ul class="list-inside mt-2 list-disc p-3">
+            <li class="mb-2">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga aut
+              facere corporis
+            </li>
+            <li class="">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga aut
+              facere corporis
+            </li>
+          </ul>
+        </div>
+        <button class="bg-red-900 text-white p-1 mb-2 rounded">
+          <a
+            href="https://github.com/Patrena94/stack-underflow"
+            target="_blank"
+            rel="noopener noreferrer"
+            >GitHub Repo</a
+          >
+        </button>
+        <br />
+        <span class="font-semibold">TECHNOLOGIES:</span>
+        <span class="flex p-1 pb-4">
+          <p class="mr-2 bg-red-900 text-white p-1 rounded">TAILWINDCSS</p>
+          <p class="mr-2 bg-red-900 text-white p-1 rounded">HTML5</p>
+          <p class="mr-2 bg-red-900 text-white p-1 rounded">JAVA SCRIPT</p>
+        </span>
+      </div>
+      <div
+        id="card"
+        class="
+          mx-4
+          px-4
+          mt-2
+          md:w-5/12
+          w-full
+          rounded-3xl
+          border-gray-300
+          shadow-xl
+          hover:shadow-2xl
+          border-2
+          mb-4
+          animate-pulse
+        "
+      >
+        <h2 class="mb-2 font-bold text-center pt-2">Run Buddy</h2>
+        <div id="card-img">
+          <img class="rounded-lg" src="./assets/images/run-buddy.PNG" alt="" />
+        </div>
+        <div id="text-area" class="mb-2">
+          <ul class="list-inside mt-2 list-disc p-3">
+            <li class="mb-2">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga aut
+              facere corporis
+            </li>
+            <li class="">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga aut
+              facere corporis
+            </li>
+          </ul>
+        </div>
+        <button class="bg-red-900 text-white p-1 mb-2 rounded">
+          <a
+            href="https://github.com/javantie/Coin-Nerds"
+            target="_blank"
+            rel="noopener noreferrer"
+            >GitHub Repo</a
+          >
+        </button>
+        <br />
+        <span class="font-semibold">TECHNOLOGIES:</span>
+        <span class="flex p-1 pb-4">
+          <p class="mr-2 bg-red-900 text-white p-1 rounded">TAILWINDCSS</p>
+          <p class="mr-2 bg-red-900 text-white p-1 rounded">HTML5</p>
+          <p class="mr-2 bg-red-900 text-white p-1 rounded">JAVA SCRIPT</p>
+        </span>
+      </div>
+    </section>
+    <footer id="contact" class="sm:flex sm:justify-between border-t">
+      <div class="contact-form pl-6 border rounded-md sm:w-4/6 m-2">
+        <div class=" font-extrabold text-2xl py-2 font-mono text-blue-700"> Contact Me</div>
+        <form class="">
+          <h3 class="font-semibold text-green-700 pb-4 text-center"> Send Me A Message!💬</h3>
+          <label class="font-semibold" for="contact-name"> Your Name:</label>
+          <input class="rounded border border-black w-4/6" type="text" id="contact-name" placeholder="Your Name" />
+          <br>  
+          <label class="font-semibold" for="contact-message">Message:</label>
+          <textarea class=" ml-4 rounded border border-black mt-2 w-4/6" id="contact-message" placeholder="Message"></textarea>
+          <br>
+          <button class="cursor-pointer text-white hover:bg-blue-900 font-bold bg-blue-400 border p-1 mt-2 rounded-lg mb-2" type="submit">Submit</button>
         </form>
-    </div>
-    <ul>
-        <li><a href="tel:+13473044422">📞Call Me</a></li>
-        <li><a href="mailto:javantieclarke@gmail.com">📧Email</a></li>
-        <li><a href="https://github.com/javantie">💻Github</a></li>
-        <li><a href="https://www.linkedin.com/in/akeem-clarke-544b6aa2">👨🏽‍💼LinkedIn</a></li>
-    </ul>
-</footer>
-</body>
+      </div>
+      
+      <ul class="pr-6 font-semibold pt-4 sm:w-2/5 text-2xl ">
+        <li class="pl-4 pt-4"><a  href="tel:+13473044422">📞 Call Me</a></li>
+        <li class="pt-4 pl-4"><a class="" href="mailto:javantieclarke@gmail.com">📧 Email</a></li>
+        <li class="pt-4 pl-4"><a href="https://github.com/javantie">💻 Github</a></li>
+        <li class="pt-4 pl-4">
+          <a href="https://www.linkedin.com/in/akeem-clarke-544b6aa2"
+            >👨🏽‍💼 LinkedIn</a
+          >
+        </li>
+      </ul>
+    </footer>
+    <script src="./index.js"></script>
+  </body>
 </html>
